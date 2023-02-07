@@ -1,0 +1,143 @@
+@page {
+    size:"A4";
+    width: 21cm;
+    height: 29.7cm;
+}
+ul{
+    display: flex;
+    list-style-type: none;
+}
+ul li a{
+    display: flex;
+    position: relative;
+    width: 220px;
+    height: 80px;
+    border-radius: 23px;
+    border: 2px solid #FED100;
+    margin-right: 5px;
+    font-size: 50px;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    color: rgba(255,255,255,0.7);
+    z-index: 5;
+    transition: 0.3s;
+}
+/*
+ul li a::after{
+    content: " ";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 150px;
+    height: 80px;
+    border-radius: 23px;
+    border: 2px solid #FED100;
+    background: rgba(255, 255, 255, 0.325);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    z-index: -1;
+    transition: 0.3s;
+}
+*/
+ul li a:hover {
+   /*transform: rotate(-5deg);*/
+   transform: scale(1.15);
+}
+ul li a:hover::before {
+    transform: rotate(-8deg);
+}
+/*
+ul li a::before {
+    content: " ";
+    position: absolute;
+    width: 150px;
+    height: 80px;
+    background: #FED100;
+    right: 0px;
+    bottom: 0;
+    border-radius: 23px;
+    z-index: -1;
+    transform-origin: 100% 100%;
+    transform: rotate(-2deg);
+    transition: 0.3s;
+}
+
+*/
+body {
+    background-color: #ffffff;
+    height: 29.7cm;
+    padding: 10;
+}
+
+div {
+    margin: 10;
+    float: left;
+    width: 40%;
+    padding: 1%;
+    
+    border-radius: 40px;
+    border: 2px solid #FED100;
+}
+h1 {
+    text-align: center;
+    padding: 10px;
+    color: #363636;
+    font-size: 20;
+    font-family: 'Arial';
+    font-weight: 600;
+    border-radius: 23px;
+    border: 2px solid #FED100;
+    width: 40%;
+    float: left;
+    margin: 12;
+
+}
+h2 {
+    color: #363636;
+    text-align: center;
+    font-size: 15;
+    font-family: 'Arial';
+    font-weight: 600;
+    padding: 5;
+}
+table {
+    width: 100%;
+    font-family: 'Arial';
+    padding: 1;
+}
+.titulo-ramal  {
+    width:30%;
+    background:#262424;
+    border-radius: 50px 0px 0px 0px;
+}
+.titulo-nome  {
+    text-align: center;
+    width:70%;
+    background:#262424;
+    border-radius: 0px 50px 0px 0px;
+
+}
+.rodape-ramal  {
+    width:30%;
+    background:#ffffff;
+    border-radius: 0px 0px 0px 50px;
+}
+.rodape-nome  {
+    text-align: center;
+    width:70%;
+    background:#ffffff;
+    border-radius: 0px 0px 50px 0px;
+
+}
+th, td {
+    color:#262424;
+    text-align: center;
+    font-weight: bold;
+    border-bottom: 1px solid #aaaaaa;
+    padding: 8px;
+    }
+
+tr:hover {
+    background-color: #FED100;
+}
