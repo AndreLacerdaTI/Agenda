@@ -85,7 +85,6 @@ while True:
             print("id: ", i[0],"Nome: ", i[1], "Ramal:", i[2])
     if menu==9:
         break
-teste = 1
 input("Não se esqueça de atualizar o site!\nTecle qualquer tecla para fechar\n")
 '''
 #listaRamalDireta = [733,721,728,722,781,732,726,716,720,711,714,770,738,712,744,761,750,718,724,760,729,743,742,735,717,730,751,768,734,755,766,719,764,762,713,723,725,737,739,773,778,759,740,767,710,779,748,752,753,754,741,745]
